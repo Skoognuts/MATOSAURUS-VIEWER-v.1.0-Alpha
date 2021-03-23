@@ -18,9 +18,8 @@ from api_mat_v_2 import get_nonull_atelCount_items, get_nonull_tech_atelCount_it
 from api_mat_v_2 import get_prets_localisations, get_one_prets_type, get_one_prets_list, calculate_total_prets
 
 CUR_DIR = os.path.dirname(__file__)
-DATA_DIR = os.path.join(CUR_DIR, "data")
-ICON_FILE = os.path.join(DATA_DIR, "icone.png")
-PATH_FILE = os.path.join(DATA_DIR, "db_path_viewer.json")
+ICON_FILE = os.path.join(CUR_DIR, "icone.png")
+PATH_FILE = os.path.join(CUR_DIR, "db_path_viewer.json")
 
 class App(QtWidgets.QTabWidget):
     def __init__(self, parent = None): # Initialisation de la fenêtre et des fonctions de départ

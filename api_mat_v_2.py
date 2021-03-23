@@ -6,8 +6,7 @@ import sqlite3
 import textwrap
 
 CUR_DIR = os.path.dirname(__file__)
-DATA_DIR = os.path.join(CUR_DIR, "data")
-PATH_FILE = os.path.join(DATA_DIR, "db_path_viewer.json")
+PATH_FILE = os.path.join(CUR_DIR, "db_path_viewer.json")
 
 with open(PATH_FILE, "r", encoding='utf8') as f :
     raw_path = json.load(f)
